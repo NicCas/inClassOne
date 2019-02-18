@@ -1,29 +1,26 @@
 /*
- printf("Lecture 5:\n\n"); printf("Example 9:\n\n\n");
+ printf("Lecture 6:\n\n"); printf("Example 1:\n\n\n");
  */
 
 #include <stdio.h>
-#include <string.h>
 
-union Data {
-   int i;
-   float f;
-   char str[20];
-};
+void swap(int *x, int *y)  //defining function called swap
+{
+    int z = *x;
+    *x = *y;
+    *y = z;
+}
 
-int main( ) {
-	printf("Lecture 5:\n\n"); printf("Example 12:\n\n\n");
+int main()
+{
+	printf("Lecture 6:\n\n"); printf("Example 1:\n\n\n");
+    int a = 45, b = 35;
+    printf("Before Swap\n");
+    printf("a = %d b = %d\n",a,b);
 
-   union Data data;
+    swap(&a, &b);
 
-   data.i = 10;
-   printf( "data.i : %d\n", data.i);
-
-   data.f = 220.5;
-   printf( "data.f : %f\n", data.f);
-
-   strcpy( data.str, "C Programming");
-   printf( "data.str : %s\n", data.str);
-
-   return 0;
+    printf("After Swap with pass by reference\n");
+    printf("a = %d b = %d\n",a,b);
+    return 0;
 }
