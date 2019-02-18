@@ -1,32 +1,23 @@
 #include <stdio.h>
 
-int A;
-int B;
-
-int fun()
-{
-  static int count = 0; //Static Variable
-  count++;
-  return count;
-}
-
-int Add()
-{
-    return A + B;
-}
-
 int main () {
 
-	printf("Lecture 5:\n");
-	printf("Example 4:\n");
+	printf("Lecture 5:\n\n");
+	printf("Example 5:\n\n\n");
 
-	int answer; // Local variable
-	A = 5;
-	    B = 7;
-	    answer = Add();
-	    printf("%d\n",answer);
-	    printf("%d ", fun());
-	    printf("%d ", fun());
-	    return 0;
+	int n[ 10 ]; /* n is an array of 10 integers */
+	   int i,j;
+
+	   /* initialize elements of array n to 0 */
+	   for ( i = 0; i < 10; i++ ) {
+	      n[ i ] = i + 100; /* set element at location i to i + 100 */
+	   }
+
+	   /* output each array element's value */
+	   for (j = 0; j < 10; j++ ) {
+	      printf("Element[%d] = %d\n", j, n[j] );
+	   }
+
+	   return 0;
 
 }
