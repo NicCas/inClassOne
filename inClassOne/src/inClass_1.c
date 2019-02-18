@@ -1,20 +1,19 @@
 /*
- printf("Lecture 6:\n\n"); printf("Example 1:\n\n\n");
+ printf("Lecture 6:\n\n"); printf("Example 3:\n\n\n");
  */
-
 #include <stdio.h>
 int main( ) {
 
-	printf("Lecture 6:\n\n"); printf("Example 3:\n\n\n");
+	printf("Lecture 6:\n\n"); printf("Example 4:\n\n\n");
 
-   char str[100];       //char array STRING used as buffer
+   char str[100];
+   int i;
 
    printf( "Enter a value :");
    fflush(stdout);  //ECLIPSE BUG
-   gets( str );
+   scanf("%s %d", str, &i);
 
-   printf( "\nYou entered: ");
-   puts( str );
+   printf( "\nYou entered: %s %d ", str, i);
 
    return 0;
 }
