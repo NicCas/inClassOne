@@ -1,4 +1,3 @@
-//IF, ELSE IF, ELSE - Decision Making
 #include <stdio.h>
 
 int main () {
@@ -27,6 +26,10 @@ int main () {
 
 
    printf("Example 2:\n");
+   int c , d;
+   c = 10;
+   printf( "Value of d is %d\n", (c == 1) ? 20: 30 );
+   printf( "Value of d is %d\n\n", (c == 10) ? 20: 30 );
 
    return 0;
 }
