@@ -2,20 +2,19 @@
  printf("Lecture 6:\n\n"); printf("Example 1:\n\n\n");
  */
 
-#include <stdio.h>  //standard input output built into c library
+#include <stdio.h>
+int main( ) {
 
-typedef int number;
+	printf("Lecture 6:\n\n"); printf("Example 3:\n\n\n");
 
- int main() {
-	 printf("Lecture 6:\n\n"); printf("Example 2:\n\n\n");
+   char str[100];       //char array STRING used as buffer
 
-   number c;
    printf( "Enter a value :");
    fflush(stdout);  //ECLIPSE BUG
-   c = getchar( );
+   gets( str );
 
    printf( "\nYou entered: ");
-   putchar( c );
+   puts( str );
 
    return 0;
 }
