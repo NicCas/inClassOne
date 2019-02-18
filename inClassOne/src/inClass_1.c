@@ -1,30 +1,32 @@
 #include <stdio.h>
 
+int A;
+int B;
+
+int fun()
+{
+  static int count = 0; //Static Variable
+  count++;
+  return count;
+}
+
+int Add()
+{
+    return A + B;
+}
+
 int main () {
 
 	printf("Lecture 5:\n");
-	printf("Example 3:\n");
-	char grade = 'B';
+	printf("Example 4:\n");
 
-	switch(grade) {
-		case 'A' :
-			printf("Excellent!\n" );
-			break;
-		case 'B' :
-		case 'C' :
-			printf("Well done\n" );
-			break;
-		case 'D' :
-			printf("You passed\n" );
-			break;
-		case 'F' :
-			printf("Better try again\n" );
-			break;
-		default :
-			printf("Invalid grade\n" );
-	}
+	int answer; // Local variable
+	A = 5;
+	    B = 7;
+	    answer = Add();
+	    printf("%d\n",answer);
+	    printf("%d ", fun());
+	    printf("%d ", fun());
+	    return 0;
 
-	printf("Your grade is  %c\n", grade );
-
-	return 0;
 }
